@@ -26,30 +26,3 @@ h2 {
 .close {
   outline: none!important;
 }
-
-.parent{
-  padding: 0px!important;
-  float: left;
-  list-style: none;
-  width: 100%;
-  background: red;
-}
-.parent > li{
-  float: left;
-  width: 33.333%;
-  background: green;
-}
-.parent:hover .child{
-  display: block;
-}
-.child{
-  position: absolute;
-  width: 100%;
-  list-style: none;
-  display: none;
-  background: yellow;
-}
-.child > li{
-  float: left;
-  width: 33.333%;
-}
