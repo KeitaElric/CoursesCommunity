@@ -1,0 +1,8 @@
+<md-list>
+    <md-list-item class="md-2-line" *ngFor="let todo of list; let i=index">
+        <md-checkbox style="height: 48px;" [(ngModel)]="todo.isCompleted"></md-checkbox>
+        <span [ngClass]="{'checked': todo.isCompleted}">{{ todo.content }}</span>
+        <span (click)="removeTodo(i)" class="delete-icon">[X]</span>
+    </md-list-item>
+</md-list>
+<button md-raised-button color="warn" (click)="removeRangeTodos()">Delete</button>

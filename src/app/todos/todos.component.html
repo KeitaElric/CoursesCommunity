@@ -1,0 +1,12 @@
+<h1>Todo page</h1>
+
+<main id="todo-page">
+    <md-card>
+        <div class="todos">
+            <todos-add (onAdded)="onAdded($event)">
+            </todos-add>
+            <todos-list [list]="todos">
+            </todos-list>
+        </div>
+    </md-card>
+</main>

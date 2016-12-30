@@ -1,0 +1,96 @@
+<!-- Simple header with fixed tabs. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header
+            mdl-layout--fixed-tabs">
+    <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <div class="header-logo">
+                <span class="mdl-layout-title">Title</span>
+            </div>
+            <div class="header-search">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                  mdl-textfield--floating-label mdl-textfield--align-right">
+                    <label class="mdl-button mdl-js-button mdl-button--icon"
+                           for="fixed-header-drawer-exp">
+                        <i class="material-icons">search</i>
+                    </label>
+                    <div class="mdl-textfield__expandable-holder">
+                        <input class="mdl-textfield__input" type="text" name="sample"
+                               id="fixed-header-drawer-exp">
+                    </div>
+                </div>
+            </div>
+            <!-- Add spacer, to align navigation to the right -->
+            <div class="mdl-layout-spacer"></div>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="show-dialog">
+                Show Dialog
+            </button>
+            <dialog class="mdl-dialog">
+                <div class="mdl-dialog__header">
+                    <button type="button" class="close" ng-click="vm.close()">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <h4 class="mdl-dialog__title">Login with ...</h4>
+                <div class="mdl-dialog__content">
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="sample3">
+                        <label class="mdl-textfield__label" for="sample3">Username...</label>
+                    </div>
+                    <br/>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="sample4">
+                        <label class="mdl-textfield__label" for="sample3">Password...</label>
+                    </div>
+                    <br/>
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                        Button
+                    </button>
+                    <br/>
+                    <br/>
+                    <facebook-login></facebook-login>
+                </div>
+            </dialog>
+        </div>
+        <!--<div class="line"></div>-->
+        <!-- Tabs -->
+        <!--<div class="mdl-layout__tab-bar mdl-js-ripple-effect">-->
+            <!--<a href="#fixed-tab-1" class="mdl-layout__tab is-active">Tab 1</a>-->
+            <!--<a href="#fixed-tab-2" class="mdl-layout__tab">Tab 2</a>-->
+            <!--<a href="#fixed-tab-3" class="mdl-layout__tab">Tab 3</a>-->
+            <!--<a href="#fixed-tab-4" class="mdl-layout__tab">Tab 4</a>-->
+            <!--<a href="#fixed-tab-5" class="mdl-layout__tab">Tab 5</a>-->
+            <!--<a href="#fixed-tab-6" class="mdl-layout__tab">Tab 6</a>-->
+        <!--</div>-->
+    </header>
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Title</span>
+    </div>
+    <main class="mdl-layout__content">
+        <ul class="parent">
+            <li>
+                aaaa
+                <ul class="child">
+                    <li>bbb</li>
+                    <li>bbb</li>
+                    <li>bbb</li>
+                </ul>
+            </li>
+            <li>aaaa</li>
+            <li>aaaa</li>
+        </ul>
+        123
+        <router-outlet></router-outlet>
+    </main>
+</div>
+
+<!--<main>-->
+<!--<h1>Angular 2 with Webpack and Material Design</h1>-->
+<!--<h2>Angular Router</h2>-->
+<!--<nav>-->
+<!--<a routerLink="/login" routerLinkActive="active">Login</a>-->
+<!--<a routerLink="/signup" routerLinkActive="active">Signup</a>-->
+<!--<a routerLink="/todos" routerLinkActive="active">TO DO</a>-->
+<!--</nav>-->
+<!--<img src='../img/angular.png' />-->
+<!--</main>-->
