@@ -21,7 +21,15 @@ module.exports = {
         loaders: [
             {
                 test: /\.ts$/,
-                loaders: ['awesome-typescript-loader', 'angular2-template-loader','angular2-router-loader']
+                loaders: ['awesome-typescript-loader', 'angular2-template-loader', 'angular2-router-loader']
+            },
+            {
+                test: /\.js$/,
+                loaders: [
+                    'ng-annotate-loader',
+                    'babel-loader'
+                ],
+                exclude: [/node_modules/, /\.(spec|e2e)\.js$/]
             },
             {
                 test: /\.html$/,
@@ -54,6 +62,10 @@ module.exports = {
                     'style', // backup loader when not building .css file
                     'css!sass!resolve-url!sass?sourceMap' // loaders to preprocess CSS
                 )
+            },
+            {
+                test: /[\\\/]bower_components[\\\/]modernizr[\\\/]modernizr\.js$/,
+                loader: "imports?this=>window!exports?window.Modernizr"
             }
         ]
     },
@@ -74,6 +86,12 @@ module.exports = {
         //Optimize code by remove white-line, spacing
         new webpack.optimize.UglifyJsPlugin({
             name: ['app', 'vendor', 'polyfills']
+        }),
+
+        new webpack.ProvidePlugin({
+            jQuery: 'jquery',
+            $: 'jquery',
+            jquery: 'jquery'
         })
     ]
 };

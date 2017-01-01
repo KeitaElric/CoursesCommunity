@@ -11,6 +11,11 @@ h2 {
   width: 30%;
 }
 
+.header-menu {
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
 .mdl-textfield__expandable-holder {
   width: 300px;
 }
@@ -26,3 +31,12 @@ h2 {
 .close {
   outline: none!important;
 }
+
+.mdl-layout__header-row {
+  padding-left: 40px;
+}
+
+a:focus {
+  color: white;
+}
+
