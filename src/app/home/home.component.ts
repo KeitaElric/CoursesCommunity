@@ -1,14 +1,12 @@
-import { Component, OnInit } from '@angular/core';
-// import './home.component.scss';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'home',
   templateUrl: './home.component.html',
-  styles: [require('./home.component.scss')]
-  // styleUrls: [String('./home.component.scss')]
+  styles: [require('./home.component.scss')],
+  // styleUrls: [String('./home.component.scss')],
 })
-export class HomeComponent implements OnInit {
-  constructor() { }
-
-  ngOnInit() { }
+export class HomeComponent {
+  starsCount: number;
+  fakeData = [1,2,3,4,5];
 }

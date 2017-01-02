@@ -1,14 +1,10 @@
-h1 {
-  color: #ffc520;
-  font-weight: 900;
-}
-
-.mdl-grid {
+.grid-content {
+  display: block;
+  text-align: left;
   background:#f4f4f4;
+  padding: 90px;
 }
 
-.list-menu {
-}
 .parent{
   background: white;
   display: flex;
@@ -43,7 +39,6 @@ h1 {
 }
 .parent2{
   width: 8%;
-  font-size: 16px;
   margin-right: 1%;
   margin-left: 1%;
 }
@@ -67,4 +62,52 @@ h1 {
 }
 .child > li{
   float: left;
+}
+
+.demo-card-square.mdl-card {
+  width: 230px;
+  height: auto;
+}
+
+.md-red:hover {
+  color: red;
+}
+
+.mdl-card__media {
+  background-color: inherit;
+}
+
+.mdl-card__supporting-text {
+  width: 100%;
+}
+
+.mdl-content {
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+.mdl-chip__action {
+  height: auto;
+  font-size: inherit;
+}
+
+.mdl-chip__text {
+  font-weight: bold;
+}
+
+.flex-container {
+  /* We first create a flex layout context */
+  display: flex;
+  /* Then we define how is distributed the remaining space */
+  justify-content: space-between;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.item-content-title {
+  display: flex;
+  justify-content: space-between;
+  font-size: large;
+  padding-top: 40px;
+  padding-bottom: 10px;
 }
