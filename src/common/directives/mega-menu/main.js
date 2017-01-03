@@ -45,7 +45,30 @@ jQuery(document).ready(function($){
 		var selected = $(this),
 			visibleNav = $(this).parent('ul').parent('.has-children').parent('ul');
 		selected.parent('ul').addClass('is-hidden').parent('.has-children').parent('ul').removeClass('move-out');
-	}); 
+	});
+
+	$('.cd-dropdown-wrapper').mouseleave(function(event){
+		event.preventDefault();
+		$('.cd-dropdown-trigger').trigger('click');
+	});
+
+	$('.cd-dropdown-trigger').hover(function(event){
+		event.preventDefault;
+		myOpen();
+	});
+
+	function myOpen(){
+		var navIsVisible = true;
+		$('.cd-dropdown').toggleClass('dropdown-is-active', navIsVisible);
+		$('.cd-dropdown-trigger').toggleClass('dropdown-is-active', navIsVisible);
+		if( !navIsVisible ) {
+			$('.cd-dropdown').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',function(){
+				$('.has-children ul').addClass('is-hidden');
+				$('.move-out').removeClass('move-out');
+				$('.is-active').removeClass('is-active');
+			});
+		}
+	};
 
 	function toggleNav(){
 		var navIsVisible = ( !$('.cd-dropdown').hasClass('dropdown-is-active') ) ? true : false;

@@ -1,0 +1,58 @@
+.parent{
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  padding: 0;
+  position: relative;
+  float: left;
+  list-style: none;
+  width: 100%;
+  border-bottom: 1px solid #cbcbcb;
+}
+.parent > a{
+  float: left;
+  padding: 10px;
+  text-decoration: none;
+  color: rgba(0,0,0,.55);
+}
+.child > a{
+  float: left;
+  padding: 10px;
+  text-decoration: none;
+  color: rgba(0,0,0,.55);
+  color: white;
+
+}
+.parent1:hover{
+  background:#f4f4f4!important;
+}
+.parent2:hover{
+  background:rgba(0,0,0,.1)!important;
+}
+.parent2{
+  width: 8%;
+  margin-right: 1%;
+  margin-left: 1%;
+}
+
+.parent1:hover .child{
+  display: flex;
+}
+.child{
+  padding: 10px;
+  box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  border: 1px solid hsla(0,0%,75%,.45);
+  align-items: center;
+  justify-content:center;
+  margin-top: 10px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  list-style: none;
+  display: none;
+  background-color: #02a1a5;
+}
+.child > li{
+  float: left;
+}

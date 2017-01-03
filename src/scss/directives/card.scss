@@ -1,0 +1,48 @@
+.demo-card-square.mdl-card {
+  width: 230px;
+  height: auto;
+}
+
+.md-red:hover {
+  color: red;
+}
+
+.mdl-card__media {
+  background-color: inherit;
+  background-size: 100% 100%;
+}
+
+.mdl-card__supporting-text {
+  width: 100%;
+}
+
+.mdl-content {
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+.mdl-chip__action {
+  height: auto;
+  font-size: inherit;
+}
+
+.mdl-chip__text {
+  font-weight: bold;
+}
+
+.flex-container {
+  /* We first create a flex layout context */
+  display: flex;
+  /* Then we define how is distributed the remaining space */
+  justify-content: space-between;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.item-content-title {
+  display: flex;
+  justify-content: space-between;
+  font-size: large;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}

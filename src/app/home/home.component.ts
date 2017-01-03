@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
   // styleUrls: [String('./home.component.scss')],
 })
 export class HomeComponent {
-  starsCount: number;
+  starsCount: number = 3;
   fakeData = [1,2,3,4,5];
 }

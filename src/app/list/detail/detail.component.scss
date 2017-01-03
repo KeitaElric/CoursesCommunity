@@ -1,0 +1,24 @@
+.grid-content {
+  display: block;
+  text-align: left;
+  background:#f4f4f4;
+  padding: 5%;
+}
+
+.mdl-card {
+  min-height: inherit;
+}
+
+.mdl-feature-card {
+  height: auto;
+  margin-bottom: 20px!important;
+}
+
+.mdl-card__media_feature {
+  width: 25%;
+  background-size: 100% 100%;
+}
+
+.mdl-feature {
+  width: 75%;
+}
