@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { NotFoundComponent } from './notfound/notfound.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: '/home', pathMatch: 'full'},
+  { path: 'home', component: HomeComponent },
   { path: 'list', loadChildren: './list/list.module#ListModule' },
-  { path: 'todos', loadChildren: './todos/todos.module#TodosModule' },
+  { path: '**', component: NotFoundComponent },
 ];
 
 @NgModule({

@@ -5,6 +5,8 @@ import { CommonModule } from '@angular/common';
 import { DetailRoutingModule } from './detail.routing';
 import { DetailComponent }   from './detail.component';
 
+import { ItemModule } from './item/item.module';
+
 import {RatingModule} from "ng2-rating";
 
 @NgModule({
@@ -12,7 +14,8 @@ import {RatingModule} from "ng2-rating";
     DetailRoutingModule,
     RatingModule,
     FormsModule,
-    CommonModule
+    CommonModule,
+    ItemModule,
   ],
   exports: [],
   declarations: [DetailComponent],

@@ -1,17 +1,12 @@
-.grid-content {
-  display: block;
-  text-align: left;
-  background:#f4f4f4;
-  padding: 5%;
-}
-
 .mdl-card {
   min-height: inherit;
+  background: #fff9f9;
 }
 
 .mdl-feature-card {
   height: auto;
-  margin-bottom: 20px!important;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .mdl-card__media_feature {
@@ -28,21 +23,4 @@
   height: 137px;
   position: relative;
   background-color: #31c036;
-}
-
-.container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  height: 137px;
-}
-
-.header-bar h1 {
-  font-size: 30px;
-  font-weight: 400;
-  margin-bottom: 7px;
-  margin-top: 0;
-  top: 35%;
-  position: relative;
 }

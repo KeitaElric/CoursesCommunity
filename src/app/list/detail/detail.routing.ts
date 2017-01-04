@@ -5,6 +5,7 @@ import { DetailComponent } from './detail.component';
 
 const routes: Routes = [
   { path: '', component: DetailComponent },
+  { path: 'item', loadChildren: './item/item.module#ItemModule' },
 ];
 
 @NgModule({

@@ -13,6 +13,7 @@ import { LoginComponent } from './login/login.component';
 import { HomeModule } from './home/home.module';
 import { ListModule } from './list/list.module';
 import { TodosModule } from './todos/todos.module';
+import { NotFoundModule } from './notfound/notfound.module';
 
 @NgModule({
     imports: [
@@ -24,6 +25,7 @@ import { TodosModule } from './todos/todos.module';
         ListModule,
         RouterModule,
         TodosModule,
+        NotFoundModule,
         MaterialModule.forRoot()
     ],
     declarations: [AppComponent, LoginComponent],
