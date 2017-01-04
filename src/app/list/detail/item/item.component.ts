@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styles: [require('./item.component.scss')],
 })
 export class ItemComponent {
-  starsCount: number;
+  starsCount: number = 4;
   fakeData = [1,2,3,4,5,6,7,8];
 }
