@@ -88,12 +88,12 @@ Main Components
 	position: relative;
 	padding: 0 36px 0 20px;
 	line-height: 40px;
-	background-color: #111433;
+	//background-color: #111433;
 	color: #ffffff;
 	border-radius: 3px;
 }
-.no-touch .cd-dropdown-trigger:hover {
-	background-color: #171b46;
+.cd-dropdown-trigger:hover {
+	color: white;
 }
 .cd-dropdown-trigger::before, .cd-dropdown-trigger::after {
 	/* this is the arrow inside the dropdown trigger*/
@@ -190,7 +190,7 @@ Main Components
 
 .cd-dropdown {
 	position: fixed;
-	z-index: 1;
+	z-index: 100;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -496,40 +496,40 @@ Main Components
 	background-size: 40px 40px;
 }
 .cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item.item-1::before {
-	background-image: url("../../images/nucleo-icon-1.svg");
+	background-image: url("../images/Coin_icon-icons.com_67575.png");
 }
 .cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item.item-2::before {
-	background-image: url("../../images/nucleo-icon-2.svg");
+	background-image: url("../images/Coin_icon-icons.com_67575.png");
 }
 .cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item.item-3::before {
-	background-image: url("../../images/nucleo-icon-3.svg");
+	background-image: url("../images/Coin_icon-icons.com_67575.png");
 }
 .cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item.item-4::before {
-	background-image: url("../../images/nucleo-icon-4.svg");
+	background-image: url("../images/Coin_icon-icons.com_67575.png");
 }
 .cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item.item-5::before {
-	background-image: url("../../images/nucleo-icon-5.svg");
+	background-image: url("../images/Coin_icon-icons.com_67575.png");
 }
 .cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item.item-6::before {
-	background-image: url("../../images/nucleo-icon-6.svg");
+	background-image: url("../images/Coin_icon-icons.com_67575.png");
 }
 .cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item.item-7::before {
-	background-image: url("../../images/nucleo-icon-7.svg");
+	background-image: url("../images/Coin_icon-icons.com_67575.png");
 }
 .cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item.item-8::before {
-	background-image: url("../../images/nucleo-icon-8.svg");
+	background-image: url("../images/Coin_icon-icons.com_67575.png");
 }
 .cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item.item-9::before {
-	background-image: url("../../images/nucleo-icon-9.svg");
+	background-image: url("../images/Coin_icon-icons.com_67575.png");
 }
 .cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item.item-10::before {
-	background-image: url("../../images/nucleo-icon-10.svg");
+	background-image: url("../images/Coin_icon-icons.com_67575.png");
 }
 .cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item.item-11::before {
-	background-image: url("../../images/nucleo-icon-11.svg");
+	background-image: url("../images/Coin_icon-icons.com_67575.png");
 }
 .cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item.item-12::before {
-	background-image: url("../../images/nucleo-icon-12.svg");
+	background-image: url("../images/Coin_icon-icons.com_67575.png");
 }
 @media only screen and (min-width: 1024px) {
 	.cd-dropdown-content {

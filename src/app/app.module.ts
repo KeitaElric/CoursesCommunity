@@ -14,8 +14,6 @@ import { HomeModule } from './home/home.module';
 import { ListModule } from './list/list.module';
 import { TodosModule } from './todos/todos.module';
 
-import {BreadcrumbService} from '../common/directives/breadcrumb/service';
-
 @NgModule({
     imports: [
         BrowserModule,
@@ -29,7 +27,6 @@ import {BreadcrumbService} from '../common/directives/breadcrumb/service';
         MaterialModule.forRoot()
     ],
     declarations: [AppComponent, LoginComponent],
-    providers: [BreadcrumbService],
     bootstrap: [AppComponent],
 })
 export class AppModule { }

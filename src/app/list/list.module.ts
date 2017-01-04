@@ -3,6 +3,7 @@ import { FormsModule }   from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
 import { DetailModule } from './detail/detail.module';
+import { ItemModule } from './item/item.module';
 
 import { ListRoutingModule } from './list.routing';
 import { ListComponent }   from './list.component';
@@ -15,7 +16,8 @@ import {RatingModule} from "ng2-rating";
     RatingModule,
     FormsModule,
     CommonModule,
-    DetailModule
+    DetailModule,
+    ItemModule,
   ],
   exports: [],
   declarations: [ListComponent],

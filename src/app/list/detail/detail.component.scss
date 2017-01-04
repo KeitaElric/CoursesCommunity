@@ -22,3 +22,27 @@
 .mdl-feature {
   width: 75%;
 }
+
+.header-bar {
+  color: #ffffff;
+  height: 137px;
+  position: relative;
+  background-color: #31c036;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 137px;
+}
+
+.header-bar h1 {
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 7px;
+  margin-top: 0;
+  top: 35%;
+  position: relative;
+}

@@ -31,7 +31,10 @@
   padding-left: 40px;
 }
 
-a:focus {
-  color: white;
+.header-logo > a {
+  color: white!important;
 }
 
+.mdl-layout__header {
+  color: white;
+}
