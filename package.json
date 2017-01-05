@@ -7,9 +7,10 @@
     "email": "thong.huynh@newoceaninfosys.com"
   },
   "scripts": {
-    "start": "webpack-dev-server --inline --hot --progress --port 8080",
+    "server": "webpack-dev-server --inline --hot --progress --port 8080",
     "test": "karma start",
-    "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail"
+    "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail",
+    "start": "webpack -p --config ./webpack.prod.js --progress"
   },
   "license": "MIT",
   "dependencies": {
@@ -28,6 +29,7 @@
     "core-js": "^2.4.1",
     "hammerjs": "^2.0.8",
     "jquery": "~2.1.1",
+    "json-loader": "^0.5.4",
     "ng-annotate-loader": "^0.2.0",
     "ng2-rating": "0.0.7",
     "node-sass": "^3.13.0",

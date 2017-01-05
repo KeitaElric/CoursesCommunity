@@ -1,0 +1,108 @@
+[
+  {
+    "id": "dev",
+    "name": "Development",
+    "icon": "web",
+    "child": [
+      {
+        "id": "dev-web",
+        "name": "Web Development",
+        "icon": "web_asset"
+      },
+      {
+        "id": "dev-mobile",
+        "name": "Mobile Apps",
+        "icon": "developer_mode"
+      },
+      {
+        "id": "dev-prog",
+        "name": "Programming Languages",
+        "icon": "web"
+      },
+      {
+        "id": "dev-game",
+        "name": "Game Development",
+        "icon": "videogame_asset"
+      },
+      {
+        "id": "dev-dtb",
+        "name": "Databases",
+        "icon": "dns"
+      },
+      {
+        "id": "dev-soft",
+        "name": "Software Testing",
+        "icon": "filter_none"
+      }
+    ]
+  },
+  {
+    "id": "its",
+    "name": "IT & Software",
+    "icon": "desktop_windows",
+    "child": [
+      {
+        "id": "its-itc",
+        "name": "IT Certification",
+        "icon": "local_florist"
+      },
+      {
+        "id": "its-net",
+        "name": "Network & Security",
+        "icon": "device_hub"
+      },
+      {
+        "id": "its-hard",
+        "name": "Hardware",
+        "icon": "developer_board"
+      },
+      {
+        "id": "its-oper",
+        "name": "Operating Systems",
+        "icon": "settings_applications"
+      },
+      {
+        "id": "its-other",
+        "name": "Other",
+        "icon": "devices_other"
+      }
+    ]
+  },
+  {
+    "id": "des",
+    "name": "Design",
+    "icon": "border_color",
+    "child": [
+      {
+        "id": "its-web",
+        "name": "Web Design",
+        "icon": "dvr"
+      },
+      {
+        "id": "its-grap",
+        "name": "Graphic Design",
+        "icon": "graphic_eq"
+      },
+      {
+        "id": "its-tool",
+        "name": "Design Tools",
+        "icon": "local_dining"
+      },
+      {
+        "id": "its-user",
+        "name": "User Experience",
+        "icon": "touch_app"
+      },
+      {
+        "id": "its-game",
+        "name": "Game Design",
+        "icon": "gamepad"
+      },
+      {
+        "id": "its-think",
+        "name": "Design Thinking",
+        "icon": "hourglass_full"
+      }
+    ]
+  }
+]

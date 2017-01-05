@@ -10,6 +10,8 @@
   width: 100%;
   border-bottom: 1px solid #cbcbcb;
   z-index: 99;
+  margin-bottom: 0;
+  height: 47px;
 }
 .parent > a{
   float: left;
@@ -25,8 +27,15 @@
   color: white;
 
 }
+.parent1 {
+  margin-left: 2%;
+  margin-right: 2%;
+}
 .parent1:hover{
   background:#f4f4f4!important;
+}
+.parent1:hover .child{
+  display: flex;
 }
 .parent2:hover{
   background:rgba(0,0,0,.1)!important;
@@ -36,10 +45,6 @@
   width: 12%;
   margin-right: 1%;
   margin-left: 1%;
-}
-
-.parent1:hover .child{
-  display: flex;
 }
 .child{
   padding: 10px;

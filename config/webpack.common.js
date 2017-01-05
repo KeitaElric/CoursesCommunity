@@ -64,6 +64,10 @@ module.exports = {
                 )
             },
             {
+                test: /\.json$/,
+                loader: 'json'
+            },
+            {
                 test: /[\\\/]bower_components[\\\/]modernizr[\\\/]modernizr\.js$/,
                 loader: "imports?this=>window!exports?window.Modernizr"
             }

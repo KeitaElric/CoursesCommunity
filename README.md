@@ -5,7 +5,7 @@ $ npm install
 
 START
 ```
-$ npm run start
+$ npm run server
 http://localhost:8080/
 ```
 
