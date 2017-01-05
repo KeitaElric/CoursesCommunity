@@ -3,7 +3,6 @@ import {Router} from "@angular/router";
 
 import {PeopleService} from './app.service';
 
-
 import {Menu} from './menu.class';
 
 @Component({
@@ -23,9 +22,10 @@ export class AppComponent {
         );
     }
 
-    public search() {
+    search() {
         console.log(this.searchText);
+        this.router.navigate(['/search', {id: this.searchText}]);
+
         this.searchText = '';
-        this.router.navigate(['/search', this.searchText]);
     }
 }

@@ -9,7 +9,7 @@ export class PeopleService {
     }
 
     public getMenu() {
-        return this.http.request('src/app/resources/menu.json')
+        return this.http.request('http://localhost:8080/src/app/resources/menu.json')
             .map(res => res.json());
     }
 

@@ -2,20 +2,20 @@ import { NgModule } from '@angular/core';
 import { FormsModule }   from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
-import { SearchRoutingModule } from './search.routing';
-import { SearchComponent }   from './search.component';
+import { DetailRoutingModule } from './detail.routing';
+import { DetailComponent }   from './detail.component';
 
 import {RatingModule} from "ng2-rating";
 
 @NgModule({
   imports: [
-    SearchRoutingModule,
+    DetailRoutingModule,
     RatingModule,
     FormsModule,
     CommonModule,
   ],
   exports: [],
-  declarations: [SearchComponent],
+  declarations: [DetailComponent],
   providers: [],
 })
-export class SearchModule { }
+export class DetailModule { }
