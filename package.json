@@ -10,7 +10,7 @@
     "server": "webpack-dev-server --inline --hot --progress --port 8080",
     "test": "karma start",
     "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail",
-    "start": "webpack -p --config ./webpack.prod.js --progress"
+    "start": "webpack -p --config config/webpack.prod.js --progress"
   },
   "license": "MIT",
   "dependencies": {
