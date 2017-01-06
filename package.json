@@ -10,7 +10,9 @@
     "server": "webpack-dev-server --inline --hot --progress --port 8080",
     "test": "karma start",
     "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail",
-    "start": "webpack -p --config config/webpack.prod.js --progress"
+    "start": "webpack -p --config config/webpack.prod.js --progress",
+    "github-deploy:dev": "webpack --config config/webpack.github-deploy.js --progress --profile --env.githubDev",
+    "github-deploy:prod": "webpack --config config/webpack.github-deploy.js --progress --profile --env.githubProd"
   },
   "license": "MIT",
   "dependencies": {
@@ -69,6 +71,11 @@
     "typescript": "^2.0.3",
     "webpack": "^1.13.0",
     "webpack-dev-server": "^1.14.1",
-    "webpack-merge": "^0.14.0"
+    "webpack-merge": "^0.14.0",
+    "gh-pages": "^0.12.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KeitaElric/CoursesCommunity.git"
   }
 }
